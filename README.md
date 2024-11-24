@@ -4,7 +4,7 @@
 <br>
 
 ## 프로젝트 소개: Bin Picking Advancement(BPA)
-<img src="https://github.com/user-attachments/assets/def23c7d-29eb-4442-893e-70bf7f8344d3" width="400" height="350"/> <br>
+<img src="https://github.com/user-attachments/assets/def23c7d-29eb-4442-893e-70bf7f8344d3" width="400"/> <br>
 생산 라인에서 사용되는 빈 피킹(Bin Picking) 로봇은 3D 카메라로 그 위치를 측정하고 조절합니다. <br>
 이를 위해서는 카메라 좌표계와 로봇 팔의 좌표계가 동일해야 하며, 두 좌표계를 통일하기 위해 변환행렬(H)이 사용됩니다. <br>
 이 좌표계 통일 방식을 개선하여 **작업자 숙련도가 없어도 캘리브레이션이 원활하게 이루어지도록 하는 것**이 프로젝트의 목표입니다. <br>
