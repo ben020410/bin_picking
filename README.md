@@ -60,18 +60,16 @@ $$v' = \left[ I + \sin\theta K + (1 - \cos\theta) K^2 \right] v, \quad K = \begi
 ## 📐 Mathematical & Data Pipeline
 
 ```mermaid
-graph TD
-    A[3D Point Cloud Input: Z.ply] --> B[SVD Plane Fitting]
-    B --> C[Surface Normal Vector Estimation]
-    
-    C --> D[Rodrigues' Rotation Formula]
-    D --> E[3D Rotation Matrix K & R]
-    E --> F[Euler Angle Extraction: Roll, Pitch, Yaw]
-    
-    F --> G[HH020 6-DOF Forward Kinematics]
-    G --> H{Joint Limit & Singularity Check}
-    H -- Pass --> I[Optimal Tool Pose Output]
-    H -- Fail --> J[Error Origin Analysis]
+graph LR
+    A[3D Point Cloud<br>Z.ply] --> B[SVD Plane Fitting]
+    B --> C[Surface Normal<br>Vector]
+    C --> D[Rodrigues'<br>Formula]
+    D --> E[3D Rotation<br>Matrix K & R]
+    E --> F[Euler Angle<br>Roll/Pitch/Yaw]
+    F --> G[HH020 6-DOF<br>Forward Kinematics]
+    G --> H{Joint Limit &<br>Singularity Check}
+    H -- Pass --> I[Optimal Tool Pose]
+    H -- Fail --> J[Error Analysis]
 ```
 
 
