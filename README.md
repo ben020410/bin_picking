@@ -11,8 +11,8 @@
 
 ## 📌 연구 개요
 <p align="left">
-  <img src="./assets/coordinate_system_diagram.png" height=300 alt="3D Vision Robot Coordinate System Calibration"/>
-    <img src="./assets/point_cloud_3d.gif" height=300 alt="3D Point Cloud SVD Fitting Demo"/>
+  <img src="./assets/coordinate_system_diagram.png" width=50% alt="3D Vision Robot Coordinate System Calibration"/>
+    <img src="./assets/point_cloud_3d.gif" width=40% alt="3D Point Cloud SVD Fitting Demo"/>
 </p>
 
 본 연구는 생산 라인에서 활용되는 3D Vision 기반 Bin Picking 로봇의 **Vision-Robot 좌표계 Auto Calibration** 및 **곡면 Sanding 공정을 위한 Tool Pose 최적화**를 목표로 진행되었습니다. (2024 서울대학교 공과대학 산학연계 프로젝트)
