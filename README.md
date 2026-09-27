@@ -1,5 +1,6 @@
 # 🤖 Bin Picking Advancement
 > 3D Vision-Robot Auto Calibration & Pose Estimation
+<br> **과기정통부 국가연구개발사업 (서울대 소재·부품·장비 협의체)** </br>
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![ROS2](https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ros&logoColor=white)
@@ -57,6 +58,8 @@ $$v' = \left[ I + \sin\theta K + (1 - \cos\theta) K^2 \right] v, \quad K = \begi
 * **Forward Kinematics**: 카탈로그 제원 및 HRSpace 시뮬레이션 데이터를 바탕으로, 6개 Joint Angle을 입력받아 End-effector의 최종 Position 및 Rotation을 연산하는 알고리즘을 구현했습니다.
 * **오차 원인 규명**: 기존 제어 알고리즘은 목적지까지의 최단 회전량만 산출하므로, 각 관절의 **Joint Limits를 고려하지 못해 Singularity나 충돌 오류가 발생**함을 수학적으로 입증했습니다.
 
+---
+
 ## 📐 Mathematical & Data Pipeline
 
 ```mermaid
@@ -71,8 +74,6 @@ graph LR
     H -- Pass --> I[Optimal Tool Pose]
     H -- Fail --> J[Error Analysis]
 ```
-
-
 ---
 
 ## 🚀 Future Work
